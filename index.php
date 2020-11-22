@@ -5,11 +5,7 @@ $client = new MongoDB\Client(
 
 $db = $client->mongodb;
 	$userCollection = $db->users;
-	$users = $userCollection->find();
-	foreach($users as $u)
-	{
-		echo $u->name . '<br>';
-	}
+	print_r($userCollection);
 // echo "acb";
 	// $insertOneResult = $collection->insertOne([
 	// 		"user_name" => "admin02",
