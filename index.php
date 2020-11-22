@@ -1,9 +1,10 @@
 <?php 
 	require_once "./vendor/autoload.php";
-	$collection = (new MongoDB\Client)->mongodb->users;
-	foreach($collection as $c)
+	$userCollection = (new MongoDB\Client)->mongodb->users;
+	$users = $userCollection->find();
+	foreach($users as $u)
 	{
-		echo $c->name . '<br>';
+		echo $u->name . '<br>';
 	}
 	// $insertOneResult = $collection->insertOne([
 	// 		"user_name" => "admin02",
