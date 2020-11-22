@@ -1,5 +1,5 @@
 <?php 
-	// require_once "./vendor/autoload.php";
+	require_once "./vendor/autoload.php";
 $client = new MongoDB\Client(
     'mongodb+srv://hainguyenvan6799:Thu123456789@phongtro.ezstc.mongodb.net/mongodb?retryWrites=true&w=majority');
 
