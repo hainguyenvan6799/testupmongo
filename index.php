@@ -6,7 +6,7 @@
 	// {
 	// 	echo $u->name . '<br>';
 	// }
-echo "acb";
+// echo "acb";
 	// $insertOneResult = $collection->insertOne([
 	// 		"user_name" => "admin02",
 	// 		"email" => "cde@gmail.com",
@@ -87,3 +87,4 @@ echo "acb";
 	// 	echo $a["count"];
 	// }
  ?>
+ <h2>Xin Chao</h2>
