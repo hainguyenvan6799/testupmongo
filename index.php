@@ -1,11 +1,12 @@
 <?php 
-	require_once "./vendor/autoload.php";
-	$userCollection = (new MongoDB\Client)->mongodb->users;
-	$users = $userCollection->find();
-	foreach($users as $u)
-	{
-		echo $u->name . '<br>';
-	}
+	// require_once "./vendor/autoload.php";
+	// $userCollection = (new MongoDB\Client)->mongodb->users;
+	// $users = $userCollection->find();
+	// foreach($users as $u)
+	// {
+	// 	echo $u->name . '<br>';
+	// }
+echo "acb";
 	// $insertOneResult = $collection->insertOne([
 	// 		"user_name" => "admin02",
 	// 		"email" => "cde@gmail.com",
