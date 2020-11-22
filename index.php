@@ -3,9 +3,9 @@
 $client = new MongoDB\Client(
     'mongodb+srv://hainguyenvan6799:Thu01679343794@phongtro.ezstc.mongodb.net/mongodb?retryWrites=true&w=majority');
 
-$db = $client->mongodb;
-	$userCollection = $db->users;
-	print_r($userCollection);
+// $db = $client->mongodb;
+// 	$userCollection = $db->users;
+// 	print_r($userCollection);
 // echo "acb";
 	// $insertOneResult = $collection->insertOne([
 	// 		"user_name" => "admin02",
