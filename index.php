@@ -1,6 +1,10 @@
 <?php 
 	// require_once "./vendor/autoload.php";
-	$userCollection = (new MongoDB\Client)->mongodb->users;
+$client = new MongoDB\Client(
+    'mongodb+srv://hainguyenvan6799:Thu01679343794@phongtro.ezstc.mongodb.net/mongodb?retryWrites=true&w=majority');
+
+$db = $client->mongodb;
+	$userCollection = $db->users;
 	$users = $userCollection->find();
 	foreach($users as $u)
 	{
