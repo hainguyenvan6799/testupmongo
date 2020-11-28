@@ -1,11 +1,15 @@
 <?php 
 	require_once "./vendor/autoload.php";
 $client = new MongoDB\Client(
-    'mongodb+srv://hai:X2L3zGTavujQkwLW@phongtro.ezstc.mongodb.net/phongtrodb?retryWrites=true&w=majority');
+    'mongodb+srv://hainguyenvan6799:FpStNIkhVebgmica@cluster0.kyvzw.mongodb.net/phongtrodb?retryWrites=true&w=majority');
 
-$db = $client->mongodb;
-	$userCollection = $db->test;
-	print_r($userCollection);
+$db = $client->phongtrodb;
+	// print_r($db->test);
+	$testde = $db->test->find();
+	foreach($testde as $t)
+	{
+		echo $t->ab;
+	}
 // echo "acb";
 	// $insertOneResult = $collection->insertOne([
 	// 		"user_name" => "admin02",
