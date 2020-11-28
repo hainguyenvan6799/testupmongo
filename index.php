@@ -4,7 +4,7 @@ $client = new MongoDB\Client(
     'mongodb+srv://hai:X2L3zGTavujQkwLW@phongtro.ezstc.mongodb.net/phongtrodb?retryWrites=true&w=majority');
 
 $db = $client->mongodb;
-	$userCollection = $db->users;
+	$userCollection = $db->test;
 	print_r($userCollection);
 // echo "acb";
 	// $insertOneResult = $collection->insertOne([
